@@ -1,0 +1,30 @@
+.slideInText{
+    left:0px;
+    position:relative;
+    opacity:1;
+    font-size:0px;
+    animation-duration:15s;
+    animation-name:slidein;
+}
+
+@keyframes slidein{
+    0%{
+        left:800px;
+        font-size:16px;
+    }
+    5%{
+        left:0px;
+    }
+    75%{
+        opacity:1;
+        font-size:16px;
+    }
+    100%{
+        opacity:0;
+        font-size:0px;
+    }
+}
+
+body{
+    background-color: color(0,0,0,0)!important;
+}
