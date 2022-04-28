@@ -1,0 +1,20 @@
+<head>
+    <link rel="stylesheet" href="examples.css">
+</head>
+<div id="output">
+    <p class="slideInText" id="slideInText">
+        Test 1<br>
+    </p>
+</div>
+<script type="text/javascript">
+    const box = document.getElementById("output")
+    var msgnumb=2;
+    setInterval(()=>{
+        if (Math.random()<=0.5) {
+            const l = document.createElement("p");
+            l.innerText="Test Message "+(msgnumb++)
+            l.className="slideInText"
+            box.appendChild(l)
+        }
+    },2000)
+</script>
