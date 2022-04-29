@@ -3,7 +3,7 @@
 </head>
 <div id="output">
     <p class="slideInText" id="slideInText">
-        Test 1<br>
+        <img src="broadcaster.png"/>Test 1<br>
     </p>
 </div>
 <script type="text/javascript">
@@ -12,7 +12,7 @@
     setInterval(()=>{
         if (Math.random()<=0.5) {
             const l = document.createElement("p");
-            l.innerText="Test Message "+(msgnumb++)
+            l.innerHTML="<img src=\"broadcaster.png\"/>Test Message "+(msgnumb++)
             l.className="slideInText"
             box.appendChild(l)
         }
