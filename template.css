@@ -3,8 +3,15 @@
     position:relative;
     opacity:1;
     font-size:0px;
+    overflow:auto;
+    -webkit-animation-duration:15s;
+    -webkit-animation-name:slidein;
+    -webkit-animation-iteration-count:1;
+    -webkit-animation-fill-mode:forwards;
     animation-duration:15s;
     animation-name:slidein;
+    animation-iteration-count:1;
+    animation-fill-mode:forwards;
 }
 
 @keyframes slidein{
@@ -18,10 +25,32 @@
     75%{
         opacity:1;
         font-size:16px;
+        min-height:auto;
     }
     100%{
         opacity:0;
         font-size:0px;
+        min-height:0px;
+    }
+}
+
+@-webkit-keyframes slidein{
+    0%{
+        left:800px;
+        font-size:16px;
+    }
+    5%{
+        left:0px;
+    }
+    75%{
+        opacity:1;
+        font-size:16px;
+        min-height:auto;
+    }
+    100%{
+        opacity:0;
+        font-size:0px;
+        min-height:0px;
     }
 }
 
